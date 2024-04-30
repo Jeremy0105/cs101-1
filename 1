@@ -1,0 +1,6 @@
+from thinkdsp import TriangleSignal
+
+signal=   TriangleSignal(100)
+duration= signal.period*3
+segment= signal.make_wave(duration, framerate=10_000)
+segment.plot()
